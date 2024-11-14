@@ -27,7 +27,7 @@ export default async function CategoryPage({
 
   return (
     <div className="pt-32 flex-grow text-black text-center text-4xl items-center">
-      <span className="font-[family-name:var(--font-geist-mono)]">{categoriaData.categoria}</span>
+      <span className="font-[family-name:var(--nasalization)]">{categoriaData.categoria}</span>
       
       <div className="max-sm:px-0 md:px-10 xl:px-32 pt-10 grid max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-3 rounded-xl overflow-hidden justify-center">
         {productos.map((item) => (
