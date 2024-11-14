@@ -22,7 +22,7 @@ export default function Home() {
             CROMBIE SHOP           
               
             </p>
-            <p className="text-center text-black">Bienvenido a la tienda de Crombie :> </p>
+            <p className="text-center text-black">Bienvenido a la tienda de Crombi 😀 </p>
           </ol>
 
           <div className="flex gap-4 items-center flex-col sm:flex-row">
