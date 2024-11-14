@@ -1,15 +1,31 @@
+/*globals.css*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.page-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.main-content {
+  grid-row: 2 / -1;
+}
+
+.footer {
+  grid-row: -1 / -1;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #f0f0f0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: linear-gradient(180deg, #ffffff, #f0f0f0); /* Negro a magenta oscuro */
     --foreground: #ededed;
   }
 }
@@ -18,4 +34,95 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
+
+
+/*GRID AREA*/
+/* globals.css */
+/* globals.css */
+
+.custom-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) { /* Pantallas medianas o mayores */
+  .custom-grid {
+    grid-template-columns: repeat(12, 1fr); /* 12 columnas */
+    grid-template-rows: repeat(5, auto); /* 5 filas */
+  }
+}
+
+@media (max-width: 639px) { /* Pantallas pequeñas */
+  .custom-grid {
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+    grid-template-rows: repeat(12, auto); /* 12 filas */
+  }
+}
+
+
+
+/*Elemento a*/
+@media (min-width: 640px) { /* Pantallas medianas o mayores */
+
+  .a {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 4;
+  }
+}
+
+@media (max-width: 639px) { /* Pantallas pequeñas */
+  .a {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 4;
+  }
+}
+
+
+
+/*Elemento b*/
+@media (min-width: 640px) { /* Pantallas medianas o mayores */
+
+  .b {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 4;
+  }
+}
+
+@media (max-width: 639px) { /* Pantallas pequeñas */
+
+  .b {
+    grid-column: 2 / span 4;
+    grid-row: 5 / span 4;
+  }
+  
+}
+
+
+
+/*Elemento c*/
+@media (min-width: 640px) { /* Pantallas medianas o mayores */
+
+  
+  .c {
+    grid-column: 9 / span 4;
+    grid-row: 2 / span 4;
+  }
+  
+}
+
+@media (max-width: 639px) { /* Pantallas pequeñas */
+  .c {
+    grid-column: 1 / span 4;
+    grid-row: 9 / span 4;
+  }
+  
+}
+
+
+
+
+
+
+

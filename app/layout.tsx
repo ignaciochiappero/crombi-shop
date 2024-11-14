@@ -1,6 +1,11 @@
-import type { Metadata } from "next";
+//layout.tsx
+
+import { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./compontents/Navbar";
+import Footer from "./compontents/Footer";
+import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,10 +30,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-1 ">
+            {/* Contenido principal de la página */}
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
