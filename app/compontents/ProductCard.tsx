@@ -1,4 +1,4 @@
-import { categories } from "@/data";
+import { dataCategories } from "@/data";
 import Image from "next/image";
 
 export default function ProductCard() {
@@ -8,7 +8,7 @@ export default function ProductCard() {
 
 
       {
-        categories.map( item => (
+        dataCategories.map( item => (
             
           <div key={item.id} className="overflow-hidden rounded-xl">
             <Image
