@@ -6,9 +6,10 @@ import Image from "next/image";
 export default async function ProductPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{id:string}>;
 }) {
-  const id = parseInt(params.id);
+  const id = Number((await params).id); ;
+
 const product = dataProducts.find((item) => item.id === id);
 
 if (!product) {

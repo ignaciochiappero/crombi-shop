@@ -2,8 +2,13 @@ import { dataCategories, dataProducts } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CategoryPage({ params }: { params: { categoria: string } }) {
-  const { categoria } = params;
+export default async function CategoryPage({ 
+  params 
+}: { 
+  params: Promise<{categoria: string}> 
+
+}) {
+  const categoria  = (await params).categoria;
   
   // Agrega este log para verificar el valor de 'categoria'
   console.log("Categoría recibida:", categoria);
