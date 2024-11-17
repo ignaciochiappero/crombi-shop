@@ -58,6 +58,11 @@ const dinNormal = localFont({
   weight: "100 900",
 });
 
+const nikeFont = localFont({
+  src: "./fonts/Futura Condensed Extra Bold.otf",
+  variable: "--nike",
+  weight: "100 900",
+});
 
 
 
@@ -82,7 +87,7 @@ export default function RootLayout({
         />
       </Head>
       <body
-        className={`${dinMedium.variable} ${dinNormal.variable} ${dinBold.variable} ${dinBlack.variable} ${ostrichSans.variable} ${nasaFont.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${nikeFont.variable} ${dinMedium.variable} ${dinNormal.variable} ${dinBold.variable} ${dinBlack.variable} ${ostrichSans.variable} ${nasaFont.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex flex-col min-h-screen">
           <Navbar />

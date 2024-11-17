@@ -4,28 +4,30 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="p-4 flex flex-col items-center font-[family-name:var(--font-geist-mono)] pb-20 pt-20 transition-all flex-grow  ">
-      <div className="text-6xl max-sm:text-3xl pt-10 text-black">Nuestra Tienda</div>
+    <div className="p-4 flex flex-col items-center font-[family-name:var(--nike)] pb-20 pt-28 transition-all flex-grow px-20 ">
+      <div className="text-3xl max-sm:text-3xl pt-0 text-black">NUESTRA TIENDA</div>
 
-      <div className="text-xl mt-16 text-black">Categorías</div>
-
-      <div className="custom-grid gap-3 xl:gap-10 mt-20">
+      <div className="font-[family-name:var(--nasalization)] custom-grid mt-5 px-10 py-4 bg-black w-screen">
         {dataCategories.map((item) => (
           <Link
-            href={item.link}          
+            href={item.link}
             key={item.id}
-            className={`group h-80 max-sm:w-80 sm:w-48 md:w-64 xl:w-80 border backdrop-blur bg-white rounded-lg p-5  transition-all hover:bg-black text-black hover:text-white flex flex-col items-center justify-center ${item.class} `}
+            className={`group relative rounded-none transition-all flex flex-col items-center justify-center ${item.class} overflow-hidden h-[480px]`}
           >
-            <div className="group-hover:animate-bounce text-xl mb-5">{item.categoria}</div>
-
-            <div className="overflow-hidden rounded-xl">
+            <div className="overflow-hidden flex items-center justify-center w-full h-full transition-all">
               <Image
                 src={item.src}
-                width={200}
-                height={200}
-                className="rounded-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+                width={1000}
+                height={1000}
+                className="rounded-sm transition-all duration-300 ease-in-out transform group-hover:scale-110 group-hover:brightness-75
+                group-hover:blur-sm
+                "
                 alt={item.categoria}
               />
+            </div>
+
+            <div className="absolute inset-0 flex items-center justify-center text-5xl text-white/0 group-hover:text-white transition-all animate-pulse">
+              <span>{item.categoria}</span>
             </div>
           </Link>
         ))}

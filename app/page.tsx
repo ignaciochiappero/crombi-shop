@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
 
-    <main className="flex-grow min-h-screen">
+    <main className="flex-grow min-h-screen pt-10">
 
    
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center h-screen pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">

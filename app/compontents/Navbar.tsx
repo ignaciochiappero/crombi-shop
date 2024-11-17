@@ -1,22 +1,34 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className="">
+    <div className="z-50 flex mt-5 items-center fixed ">
 
-      <div className='z-50  text-white h-16 font-[family-name:var(--font-geist-mono)] flex items-center p-2 gap-10 justify-end pr-10 transition-all fixed w-screen bg-slate-700/50 backdrop-blur-sm'>
+      <div className=' z-50 pl-5'>
+        <Image
+          src="/logo-bn.png"
+          width={60}
+          height={60}
+          alt='logo-navbar'
+          className=''
+        
+        />
+      </div>
 
-        <Link href="/" className="hover:text-gray-700 transition-all">
-          Inicio
+      <div className=' border text-black h-16 font-[family-name:var(--din-bold)] flex items-center p-2 gap-5 justify-center pr-10 transition-all fixed w-screen bg-white/50 backdrop-blur-sm pl-10 '>
+
+        <Link href="/" className=" p-3 hover:text-white transition-all hover:bg-black rounded-sm">
+          INICIO
         </Link>
 
-        <Link href="/tienda" className="hover:text-gray-700 transition-all">
-          Tienda
+        <Link href="/tienda" className=" p-3 hover:text-white transition-all hover:bg-black rounded-sm">
+          TIENDA
         </Link>
 
-        <Link href="/perfil" className="hover:text-gray-700 transition-all">
-          Perfil
+        <Link href="/perfil" className=" p-3 hover:text-white transition-all hover:bg-black rounded-sm">
+          PERFIL
         </Link>
 
 
