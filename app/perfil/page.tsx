@@ -42,19 +42,22 @@ export default function UserPage() {
         {/* Contenedor imagen - datos */}
         <div className=" flex flex-col items-center ">
           
-
+        <div className="group overflow-hidden rounded-full border border-black mb-3">
+          
           <Image 
             src="/perfil-n-d.png"
             width={200}
             height={200}
             alt="perfil"
             
-            className="border border-black rounded-full mb-3"
+            className="rounded-full  transition-transform duration-300 ease-in-out transform group-hover:scale-105"
             
             /> 
-
+        
+        </div>
 
           <p className="p-2 font-bold border border-black rounded-lg">Nacho Chiappero</p>
+
 
         </div>
 

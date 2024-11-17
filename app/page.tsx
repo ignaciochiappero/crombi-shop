@@ -17,12 +17,12 @@ export default function Home() {
             height={300}
             priority
           />
-          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--nasalization)]">
             <p className="mb-2 text-6xl text-black">
             CROMBIE SHOP           
               
             </p>
-            <p className="text-center text-black">Bienvenido a la tienda de Crombi 😀 </p>
+            <p className="text-center text-black font-[family-name:var(--font-geist-mono)] ">Bienvenido a la tienda de Crombi 😀 </p>
           </ol>
 
           <div className="flex gap-4 items-center flex-col sm:flex-row">

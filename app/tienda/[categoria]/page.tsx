@@ -47,10 +47,10 @@ export default async function CategoryPage({
                   className="rounded-sm transition-transform duration-300 ease-in-out transform group-hover:scale-110"
                 />
               </div>
-              <span className="text-start pt-1 text-xs font-[family-name:var(--font-geist-mono)]">
+              <span className="text-start pt-1 text-xs font-[family-name:var(--nasalization)]">
                 {item.nombre}
               </span>
-              <span className="text-start text-sm font-bold">${item.precio}</span>
+              <span className="text-start text-2xl font-[family-name:var(--din-bold)]">${item.precio}</span>
             </div>
           </Link>
         ))}

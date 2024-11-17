@@ -12,7 +12,7 @@ export default function About() {
           <Link
             href={item.link}
             key={item.id}
-            className={`group relative rounded-none transition-all flex flex-col items-center justify-center ${item.class} overflow-hidden h-[480px]`}
+            className={`group relative rounded-none transition-all flex flex-col items-center justify-center ${item.class} overflow-hidden md:h-[300px]  xl:h-[480px] lg:h-[300px]`}
           >
             <div className="overflow-hidden flex items-center justify-center w-full h-full transition-all">
               <Image

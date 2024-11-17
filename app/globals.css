@@ -90,57 +90,64 @@ TODO
 
 @media (max-width: 959px) { /* Pantallas medianas */
   .custom-grid {
-    grid-template-columns: repeat(6, 1fr); /* 5 columnas */
+    grid-template-columns: repeat(12, 1fr); /* 5 columnas */
     grid-template-rows: repeat(12, auto); /* 12 filas */
   }
 }
 
 
 
+
+/*ELEMENTOS INDIVIDUALES*/
 /*Elemento a*/
-@media (min-width: 640px) { /* Pantallas medianas o mayores */
+@media (min-width: 960px) { /* Pantallas mayores */
 
   .a{
-    grid-column: 2 / span 5;
+    grid-column: 2 / span 4;
     grid-row: 1 / span 3;
 
 }
 
 }
 
-@media (max-width: 639px) { /* Pantallas pequeñas */
+@media (max-width: 959px) { /* Pantallas pequeñas */
   .a {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 4;
+    grid-column: 2 / span 11;
+    grid-row: 1 / span 3;
   }
 }
 
 
 
+
+
 /*Elemento b*/
-@media (min-width: 640px) { /* Pantallas medianas o mayores */
+@media (min-width: 960px) { /* Pantallas mayores */
 
   .b{
-    grid-column: 7 / span 5;
+    grid-column: 6 / span 6;
     grid-row: 1 / span 3;
 
 }
 
 }
 
-@media (max-width: 639px) { /* Pantallas pequeñas */
+@media (max-width: 959px) { /* Pantallas pequeñas */
 
   .b {
-    grid-column: 2 / span 4;
-    grid-row: 5 / span 4;
+    grid-column: 1 / span 11;
+    grid-row: 4 / span 3;
   }
   
 }
 
 
 
+
+
+
 /*Elemento c*/
-@media (min-width: 640px) { /* Pantallas medianas o mayores */
+@media (min-width: 960px) { /* Pantallas  mayores */
 
   .c{
     grid-column: 2 / span 6;
@@ -150,18 +157,21 @@ TODO
   
 }
 
-@media (max-width: 639px) { /* Pantallas pequeñas */
+@media (max-width: 959px) { /* Pantallas pequeñas */
   .c {
-    grid-column: 1 / span 4;
-    grid-row: 9 / span 4;
+    grid-column: 2 / span 11;
+    grid-row: 7 / span 3;
   }
   
 }
 
 
 
-/*Elemento c*/
-@media (min-width: 640px) { /* Pantallas medianas o mayores */
+
+
+
+/*Elemento d*/
+@media (min-width: 960px) { /* Pantallas  mayores */
 
 
 
@@ -174,10 +184,10 @@ TODO
   
 }
 
-@media (max-width: 639px) { /* Pantallas pequeñas */
-  .c {
-    grid-column: 1 / span 4;
-    grid-row: 9 / span 4;
+@media (max-width: 959px) { /* Pantallas pequeñas */
+  .d {
+    grid-column: 1 / span 11;
+    grid-row: 10 / span 3;
   }
   
 }
